@@ -11,9 +11,9 @@ async function getWeatherData(latitude,longitude){
     let newUrl=`https://api.weatherapi.com/v1/current.json?key=5300d1ee12314ac1bda82407242302&q=${latitude},${longitude}`;
 
     let response= await fetch(newUrl);
-    //console.log(response);
+    console.log(response);
     let data= await response.json();
-    //console.log(data)
+    console.log(data)
     let temperature=data.current.temp_c;
     //console.log(temperature);
     let pressure=data.current.pressure_mb;
