@@ -13,35 +13,51 @@
     
     <main>
         <div class="container">
-            <div class="left">
-                <img src="assets/images/partly_cloud.jpg" alt="partly-cloudy">
-                
-                <p class="condition">Partly Cloud</p>
-                
-                <div class="temp-container">
-                    <div class="high">
-                        <i class="fa-solid fa-arrow-up"></i>
-                        <p class="max">17°</p>
-                    </div>
-
-                    <div class="low">
-                        <i class="fa-solid fa-arrow-down"></i>
-                        <p class="min">4°</p>
-                    </div>
-                </div>
+            <div class="search-container">
+                <input type="text" class="inputbox" placeholder="Search Location">
+                <button class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
 
-            <div class="right">
-                <div class="current-temp">
-                    <p>24°C</p>
-                </div>
-                <div class="location-container">
+            <div class="image-container">
+                <img src="assets/images/partly_cloud.jpg" alt="">
+            </div>
+
+            <div class="temp-container">
+                <p class="temperature">32°c</p>
+                <div class="current_location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <div class="location">
-                        <p>Current Location</p>
+                    <p class="location">Current Location</p>
+                </div>
+            </div>
+
+            <div class="bottom-container">
+                <div class="left">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="value-container">
+                        <p class="value humidity">22%</p>
+                        <div class="text-container">
+                            <p class="text">Humidity</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="right">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="value-container">
+                        <p class="value windspeed">18 km/h</p>
+                        <div class="text-container">
+                            <p class="text">Wind Speed</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="time-container">
+            <p class="time"></p>
         </div>
     </main>
     <!-- <script src="script.js"></script> -->
